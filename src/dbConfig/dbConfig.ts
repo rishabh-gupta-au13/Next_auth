@@ -5,6 +5,7 @@ export async function connect(){
     try{
 
         mongoose.connect(process.env.MONGO_URL!);
+        // thi =
         const connection=mongoose.connection
         connection.on('connected',()=>{
             console.log('MongoDb Connected');
